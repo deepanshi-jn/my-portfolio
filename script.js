@@ -85,9 +85,12 @@ valueset();
 loaderanimation();
 
 let subMenu = document.getElementById("subMenu");
-function toggleMenu(){
+let menuIcon = document.getElementById("menu-icon");
+
+function toggleMenu() {
     subMenu.classList.toggle("open-menu");
 }
+
 
 gsap.to(".fleftlm",{
     scrollTrigger:{
@@ -125,3 +128,28 @@ let subMenu1 = document.getElementById("subMenu1");
 function toggleMenu1(){
     subMenu1.classList.toggle("open-menu1");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    function applyFadeEffect() {
+        if (window.innerWidth <= 450) {
+            const projectBoxes = document.querySelectorAll(".fleftlm");
+
+            function fadeInOnScroll() {
+                projectBoxes.forEach((box) => {
+                    const boxTop = box.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (boxTop < windowHeight - 50) {
+                        box.classList.add("fade-in");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", fadeInOnScroll);
+            fadeInOnScroll();
+        }
+    }
+
+    applyFadeEffect();
+    window.addEventListener("resize", applyFadeEffect);
+});
