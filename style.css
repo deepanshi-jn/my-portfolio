@@ -738,8 +738,8 @@ body {
 
     #home #home_main {
         width: 100%;
-        padding: 25vw 17vw;
-        margin-bottom: 63.2vw;
+        padding: 60vw 17vw;
+        margin-bottom: 90.2vw;
     }
                 
 
@@ -756,9 +756,9 @@ body {
     }
 
     #home_last p {
-        font-size: 19px;
+        font-size: 18px;
         /* Set a fixed font size for readability */
-        padding: 21px 5vw;
+        padding: 53px 5vw;
     }
 }
 
@@ -1031,13 +1031,13 @@ body {
     }
 
     .slide .tag {
-        font-size: 2.5vw;
-        padding: 4px 8px;
+        font-size: 3.5vw;
+        padding: 5px 8px;
     }
 
     .slide .img {
-        max-width: 60px;
-        height: 50px;
+        max-width: 64px;
+        height: 54px;
     }
 }
 
