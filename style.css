@@ -1,27 +1,27 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Cabin", sans-serif;
 }
 
-*::selection{
+*::selection {
     color: #fff;
     background-color: #000;
 }
 
-html, body{
+html,
+body {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
 }
 
-#main{
+#main {
     width: 100%;
 }
 
-#loader{
+#loader {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -30,53 +30,56 @@ html, body{
     color: #000;
 }
 
-#loader #top{
+#loader #top {
     position: absolute;
     top: 5%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
-#loader h1{
+#loader h1 {
     display: flex;
     justify-content: center;
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 3vw;
     font-weight: 500;
 }
 
-#loader .parent .child .lastname{
+#loader .parent .child .lastname {
     font-family: "League Spartan", sans-serif;
     font-weight: 600;
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
 
-#top h5{
+#top h5 {
     text-align: center;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 300;
 }
 
-.reveal .parent{
+.reveal .parent {
     display: flex;
     justify-content: center;
     width: 100%;
     overflow-y: hidden;
 }
-.reveal .parent .child{
+
+.reveal .parent .child {
     display: block;
 }
-.parent .child span{
+
+.parent .child span {
     display: inline-block;
 }
 
-#black{
+
+#black {
     position: absolute;
     top: 100%;
     width: 100%;
@@ -85,12 +88,12 @@ html, body{
     background-color: #000;
 }
 
-#home{
+#home {
     width: 100%;
     min-height: 100vh;
 }
 
-#nav{
+#nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,44 +102,44 @@ html, body{
     position: relative;
 }
 
-#nav img{
+#nav img {
     width: 150px;
 }
 
-#nav #right{
+#nav #right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-#nav #right i{
+#nav #right i {
     font-size: 1.2vw;
 }
 
-#nav #right .sub-menu-wrap{
+#nav #right .sub-menu-wrap {
     position: absolute;
     top: 75%;
     right: 3%;
-    max-height:0;
+    max-height: 0;
     overflow: hidden;
     transition: max-heigth, ease-in-out 0.5s;
 }
 
-#nav #right .sub-menu-wrap.open-menu{
+#nav #right .sub-menu-wrap.open-menu {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     max-height: 400px;
 }
 
-#nav #right .sub-menu{
+#nav #right .sub-menu {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 10px;
     background: white;
     padding: 5px;
 }
 
-#nav #right .sub-menu-link{
+#nav #right .sub-menu-link {
     border-radius: 5px;
-    padding: 7px 12px; 
+    padding: 7px 12px;
     width: 125px;
     display: flex;
     justify-content: center;
@@ -163,29 +166,29 @@ html, body{
 } */
 
 
-#home #home_main{
+#home #home_main {
     width: 100%;
     padding: 15vw 18vw;
 }
 
-#home_main .reveal .parent{
+#home_main .reveal .parent {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     width: 100%;
     overflow-y: hidden;
 }
 
-#home_main h1{
+#home_main h1 {
     font-weight: 400;
     font-size: 1.2vw;
 }
 
-.headings{
+.headings {
     display: flex;
     gap: 40px;
 }
 
-#home_main .headings .child{
+#home_main .headings .child {
     color: transparent;
     -webkit-text-stroke: 1px #000;
     font-family: "League Spartan", sans-serif;
@@ -197,55 +200,55 @@ html, body{
     transition: color 0.2s ease;
 }
 
-#home_main .headings .child:hover{
+#home_main .headings .child:hover {
     color: #000;
 }
 
 
-#home_last{
+#home_last {
     padding: 5vw 18vw;
 }
 
-#home_last p{
+#home_last p {
     width: 90%;
     font-size: 1.6vw;
     font-weight: 400;
 }
 
-#home_last .warn{
+#home_last .warn {
     font-weight: 600;
 }
 
-#projects{
+#projects {
     padding: 10vw 18vw;
 }
 
-.fheading>h1{
+.fheading>h1 {
     line-height: 1;
     font-size: 3.5vw;
     font-weight: 400;
 }
 
-.fheading>h1:nth-child(2){
+.fheading>h1:nth-child(2) {
     color: transparent;
     -webkit-text-stroke: 0.5px #000;
 }
 
-.fheading .second{
+.fheading .second {
     color: #000;
 }
 
-.fheading .first{
+.fheading .first {
     color: transparent;
     -webkit-text-stroke: 0.5px #000;
     transition: color 0.3s ease;
 }
 
-.fheading .first:hover{
+.fheading .first:hover {
     color: #000;
 }
 
-#project_images{
+#project_images {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -253,13 +256,13 @@ html, body{
     margin-top: 5vw;
 }
 
-#fleft{
+#fleft {
     overflow: hidden;
     width: 45%;
     height: inherit;
 }
 
-.fleftlm{
+.fleftlm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,7 +270,7 @@ html, body{
     height: inherit;
 }
 
-.fleftlm h1{
+.fleftlm h1 {
     font-size: 3vw;
     line-height: 1;
     font-weight: 400;
@@ -276,7 +279,7 @@ html, body{
     margin-bottom: 1.5vw;
 }
 
-.fleftlm a{
+.fleftlm a {
     text-decoration: none;
     color: #2d396d;
 }
@@ -285,17 +288,17 @@ html, body{
     color: #606ea8;
 }
 
-.fleftlm h3{
+.fleftlm h3 {
     font-size: 1.3vw;
     font-weight: 400
 }
 
-.fleftlm h4{
+.fleftlm h4 {
     opacity: 0.5;
     font-weight: 400;
 }
 
-#fright{
+#fright {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -303,18 +306,18 @@ html, body{
     height: inherit;
 }
 
-#fright .images{
+#fright .images {
     width: 90%;
     height: 90%;
 }
 
-#fright .images img{
+#fright .images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#btndiv{
+#btndiv {
     position: relative;
     display: flex;
     align-items: center;
@@ -322,39 +325,39 @@ html, body{
     margin-top: 3vw;
 }
 
-#btndiv button{
+#btndiv button {
     padding: 1vw 2vw;
     border-radius: 100px;
-    border: 2px solid #e6e6e6;
+    
     background-color: #fff;
     font-size: 1vw;
     font-weight: 500;
     letter-spacing: -0.5px;
 }
 
-#btndiv .sub-menu-wrap1{
+#btndiv .sub-menu-wrap1 {
     position: absolute;
     top: 110%;
-    max-height:0;
+    max-height: 0;
     overflow: hidden;
     transition: max-heigth, ease-in-out 0.5s;
 }
 
-#btndiv .sub-menu-wrap1.open-menu1{
+#btndiv .sub-menu-wrap1.open-menu1 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     max-height: 400px;
 }
 
-#btndiv .sub-menu1{
+/* #btndiv .sub-menu1 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 10px;
     background: white;
     padding: 5px;
-}
+} */
 
-#btndiv .sub-menu-link1{
+#btndiv .sub-menu-link1 {
     border-radius: 5px;
-    padding: 7px 12px; 
+    padding: 7px 12px;
     width: 275px;
     display: flex;
     justify-content: center;
@@ -371,34 +374,34 @@ html, body{
 }
 
 
-#skills{
+#skills {
     width: 100%;
 }
 
-.lines{
+.lines {
     padding: 5vw 18vw;
 }
 
-.lines h1{
+.lines h1 {
     width: 50%;
     font-size: 3.5vw;
     font-weight: 400;
     line-height: 1;
 }
 
-.lines p{
+.lines p {
     font-size: 1.5vw;
     margin-top: 1.5vw;
 }
 
-#skill_img{
+#skill_img {
     padding: 3vw 10vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.slide{
+.slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -407,7 +410,7 @@ html, body{
     width: 10%;
 }
 
-.slide .tag{
+.slide .tag {
     width: fit-content;
     border-radius: 100px;
     padding: 10px 20px;
@@ -415,37 +418,37 @@ html, body{
     text-align: center;
 }
 
-.slide .img{
+.slide .img {
     display: flex;
     width: 100%;
     height: 100px;
     overflow: hidden;
 }
 
-.slide .img img{
+.slide .img img {
     display: block;
     margin: auto;
     width: 75%;
     object-fit: cover;
 }
 
-#certification{
+#certification {
     padding-top: 5vw;
     padding-bottom: 10vw;
     width: 100%;
 }
 
-#certi_img{
+#certi_img {
     padding: 0 15vw;
     display: flex;
     justify-content: space-between;
 }
 
-.slide1{
+.slide1 {
     width: 40%;
 }
 
-.slide1 .img{
+.slide1 .img {
     display: flex;
     width: 100%;
     height: 500px;
@@ -454,12 +457,12 @@ html, body{
     border: 1px solid #e7e7e7;
 }
 
-.slide1 .img img{
+.slide1 .img img {
     width: 100%;
     /* object-fit: cover; */
 }
 
-.slide1 .tag{
+.slide1 .tag {
     width: fit-content;
     border-radius: 100px;
     padding: 10px 20px;
@@ -467,7 +470,7 @@ html, body{
     margin: 20px 0;
 }
 
-#footer{
+#footer {
     text-align: center;
     background-color: #000;
     width: 100%;
@@ -475,7 +478,7 @@ html, body{
     padding-top: 5vw;
 }
 
-#footer .foot_heading h1{
+#footer .foot_heading h1 {
     text-align: center;
     color: white;
     font-family: "League Spartan", sans-serif;
@@ -487,7 +490,7 @@ html, body{
     transition: color 0.2s ease;
 }
 
-#footer .icons{
+#footer .icons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -496,16 +499,16 @@ html, body{
     gap: 100px;
 }
 
-#footer .icons a{
+#footer .icons a {
     text-decoration: none;
 }
 
-#footer .icons i{
+#footer .icons i {
     font-size: 2vw;
     color: #fff;
 }
 
-#footer .bottom h5{
+#footer .bottom h5 {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -513,4 +516,585 @@ html, body{
     font-weight: 300;
 }
 
+@media screen and (max-width: 768px) {
+    #nav {
+        padding: 10px 20px;
+    }
 
+    #nav #menu-icon {
+        display: block;
+    }
+
+    #nav #right .sub-menu-wrap {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 250px;
+        height: auto;
+        /* Adjusts to content height */
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav #right .sub-menu-wrap.open-menu {
+        right: 0;
+    }
+
+    #nav #right .sub-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav #right .sub-menu-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #home {
+        padding: 8vw 10vw;
+        /* Reduces padding */
+    }
+
+    .topic-reveal {
+        padding-top: 15px;
+
+    }
+
+    /* .headings {
+        gap: 15px;
+    } */
+
+    #home_last {
+        padding: 4vw 10vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        padding: 6vw 8vw;
+    }
+
+    .topic-reveal {
+        padding-top: 25px;
+    }
+
+    #home_main h1 {
+        font-size: 18px;
+        /* Fixes small screen readability */
+    }
+
+    .headings {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #home_main .headings .child {
+        font-size: 10vw;
+        /* Increases font size for better mobile visibility */
+        text-align: center;
+    }
+
+    #home_last p {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #home {
+        padding: 5vw 5vw;
+    }
+
+    .topic-reveal {
+        padding-top: 35px;
+    }
+
+    #home_main h1 {
+        font-size: 16px;
+    }
+
+    #home_main .headings .child {
+        font-size: 9vw;
+        /* Slightly reduces text size for small screens */
+    }
+
+    #home_last p {
+        font-size: 14px;
+        padding: 0 5vw;
+    }
+}
+
+/* ========== Responsive Design for Small Screens ========== */
+@media (max-width: 750px) {
+    #projects {
+        padding: 10vw 5vw;
+    }
+
+    #project_images {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #fleft {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Each project will be in a separate box */
+    .fleftlm {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover effect for better UI */
+    .fleftlm:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Center-align text inside boxes */
+    .fleftlm h1,
+    .fleftlm h3,
+    .fleftlm h4 {
+        text-align: center;
+    }
+
+    .fleftlm h1 {
+        font-size: 5vw;
+    }
+
+    .fleftlm h3 {
+        font-size: 3.5vw;
+    }
+
+    .fleftlm h4 {
+        font-size: 2.5vw;
+        opacity: 0.7;
+    }
+
+    /* Hide images for small screens */
+    #fright {
+        display: none;
+    }
+
+    /* Button Adjustments for Small Screens */
+    #btndiv {
+        flex-direction: column;
+        margin-top: 5vw;
+    }
+
+    #btndiv button {
+        font-size: 4vw;
+        padding: 2vw 4vw;
+    }
+
+    /* Adjust dropdown for better touch usability */
+    #btndiv .sub-menu-wrap1 {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #btndiv .sub-menu1 {
+        width: 100%;
+    }
+
+    #btndiv .sub-menu-link1 {
+        font-size: 3.5vw;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* Make each project box separate */
+    .fleftlm {
+        background: #ffffff;
+        /* Clean white background */
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        /* More prominent shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 15px 0;
+        /* Space between boxes */
+        opacity: 0;
+        /* Initially hidden */
+        transform: translateY(30px);
+    }
+
+    /* Hover effect for better UI */
+    .fleftlm:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Fade-in animation when scrolling */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* JavaScript will apply this class to elements when they appear */
+    .fade-in {
+        animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    /* Ensure spacing and alignment */
+    .fleftlm h1,
+    .fleftlm h3,
+    .fleftlm h4 {
+        text-align: center;
+    }
+
+    .fleftlm h1 {
+        font-size: 24px;
+    }
+
+    .fleftlm h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .fleftlm h4 {
+        font-size: 16px;
+        opacity: 0.7;
+    }
+
+    /* Ensure boxes are stacked properly */
+    #fleft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center boxes */
+    }
+
+    .fleftlm {
+        width: 90%;
+    }
+
+    #btndiv .sub-menu-wrap1 {
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 150%;
+            background-color: white;
+            /* Solid white background */
+            opacity: 1;
+            /* Ensures no transparency */
+            /* Adds a shadow for better visibility */
+            border-radius: 10px;
+            /* Soft edges */
+            padding: 10px;
+            z-index: 999;
+        /* Ensures it stays on top */
+    }
+}
+
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .lines {
+        padding: 5vw 5vw;
+    }
+
+    .lines h1 {
+        font-size: 4vw;
+    }
+
+    .lines p {
+        font-size: 1.5vw;
+    }
+
+    #skill_img {
+        gap: 3vw;
+    }
+
+    .slide {
+        width: 15%;
+        min-width: 100px;
+    }
+
+    .slide .tag {
+        font-size: 1.5vw;
+        padding: 6px 12px;
+    }
+
+    .slide .img {
+        max-width: 80px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lines h1 {
+        font-size: 5vw;
+    }
+
+    .lines p {
+        font-size: 2.5vw;
+    }
+
+    #skill_img {
+        gap: 4vw;
+    }
+
+    .slide {
+        width: 25%;
+        min-width: 80px;
+    }
+
+    .slide .tag {
+        font-size: 2vw;
+        padding: 5px 10px;
+    }
+
+    .slide .img {
+        max-width: 70px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lines h1 {
+        font-size: 6vw;
+    }
+
+    .lines p {
+        font-size: 3vw;
+    }
+
+    #skill_img {
+        gap: 5vw;
+    }
+
+    .slide {
+        width: 30%;
+        min-width: 70px;
+    }
+
+    .slide .tag {
+        font-size: 2.5vw;
+        padding: 4px 8px;
+    }
+
+    .slide .img {
+        max-width: 60px;
+        height: 50px;
+    }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .lines {
+        padding: 0 5vw;
+    }
+
+    .lines h1 {
+        font-size: 4vw;
+    }
+
+    .lines p {
+        font-size: 1.5vw;
+    }
+
+    #certi_img {
+        gap: 4vw;
+    }
+
+    .slide1 {
+        width: 45%;
+    }
+
+    .slide1 .tag {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .lines h1 {
+        font-size: 5vw;
+    }
+
+    .lines p {
+        font-size: 2vw;
+    }
+
+    #certi_img {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .slide1 {
+        width: 80%;
+    }
+
+    .slide1 .tag {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .lines h1 {
+        font-size: 6vw;
+    }
+
+    .lines p {
+        font-size: 3vw;
+    }
+
+    .slide1 {
+        width: 90%;
+    }
+
+    .slide1 .tag {
+        font-size: 2.5vw;
+        padding: 8px 16px;
+    }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+    #footer {
+        padding: 6vw 5vw;
+    }
+
+    #footer .foot_heading h1 {
+        font-size: 4vw;
+    }
+
+    #footer .icons {
+        gap: 5vw;
+    }
+
+    #footer .icons a {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer .foot_heading h1 {
+        font-size: 5vw;
+    }
+
+    #footer .icons {
+        padding-top: 6vw;
+        padding-bottom: 5vw;
+    }
+
+    #footer .icons a {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer .foot_heading h1 {
+        font-size: 6vw;
+        line-height: 1.4;
+    }
+
+    #footer .icons {
+        flex-wrap: wrap;
+        gap: 6vw;
+        padding-top: 7vw;
+        padding-bottom: 6vw;
+    }
+
+    #footer .icons a {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: calc(50% - 20px);
+        /* Two cards per row */
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        /* One card per row on smaller screens */
+    }
+}
