@@ -155,7 +155,7 @@ body {
 
 /* Menu Icon */
 #nav #right i {
-    font-size: clamp(22px, 2vw, 30px);
+    font-size: clamp(22px, 2vw, 26px);
     cursor: pointer;
 }
 
@@ -225,6 +225,8 @@ body {
     overflow-y: hidden;
 }
 
+
+
 #home_main h1 {
     font-weight: 400;
     font-size: 1.2vw;
@@ -236,6 +238,7 @@ body {
     display: flex;
     gap: 40px;
 }
+
 
 #home_main .headings .child {
     color: transparent;
@@ -738,8 +741,8 @@ body {
 
     #home #home_main {
         width: 100%;
-        padding: 62vw 17vw;
-        margin-bottom: 20.2vw;
+        padding: 60vw 17vw;
+        margin-bottom: 90.2vw;
     }
                 
 
@@ -850,6 +853,10 @@ body {
 }
 
 @media (max-width: 450px) {
+
+    #projects{
+        padding: 50vw 5vw;
+    }
 
     #projects .fheading h1 {
         line-height: 1;
