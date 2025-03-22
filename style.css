@@ -619,6 +619,1250 @@ body {
     }
 }
 
+@media screen and (max-width: 450px){
+    #nav #right #subMenu{
+        background-color: #fff;
+        width: 180px;
+        height: 190px;
+        border-radius: 10px;
+    }
+    #nav #right .sub-menu-wrap{
+        margin-top: 1px;
+    }
+    #nav #right .sub-menu{
+        background-color: #fff;
+        /* margin: 30px; */
+        height: 210px;
+        padding-top: 0px;
+        /* padding-bottom: 0px; */
+        /* margin-bottom: 20px; */
+        /* width: ; */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #nav {
+        padding: 10px 20px;
+    }
+
+    #nav #menu-icon {
+        display: block;
+    }
+
+    #nav #right .sub-menu-wrap {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 250px;
+        height: auto;
+        /* Adjusts to content height */
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav #right .sub-menu-wrap.open-menu {
+        right: 0;
+    }
+
+    #nav #right .sub-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav #right .sub-menu-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #home {
+        padding: 8vw 10vw;
+    }
+
+    #home_main {
+        padding: 8vw 6vw;
+    }
+
+    .topic-reveal {
+        padding-top: 15px;
+    }
+
+    #home_last {
+        padding: 4vw 10vw;
+    }
+
+    #home_main h1 {
+        font-size: 3vw;
+        /* Smaller font size for medium screens */
+    }
+
+    .headings .child {
+        font-size: 6vw;
+        /* Adjusted font size for better readability */
+    }
+
+    #home_last p {
+        font-size: 1.6vw;
+        /* Slightly larger font size */
+    }
+}
+
+/* For smaller tablets and larger phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    #home {
+        padding: 6vw 8vw;
+    }
+
+    .topic-reveal {
+        padding-top: 25px;
+    }
+
+    #home_main h1 {
+        font-size: 4vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    .headings {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #home_main .headings .child {
+        font-size: 9vw;
+        /* Larger font size for better readability on smaller screens */
+        text-align: center;
+    }
+
+    #home_last p {
+        font-size: 1.8vw;
+        /* Slightly larger font size for better readability */
+        width: 100%;
+        padding: 0 5vw;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    #home {
+        padding: 5vw 5vw;
+    }
+
+    .topic-reveal {
+        padding-top: 155px;
+        /* padding-bottom: 155px; */
+    }
+
+    #home #home_main {
+        width: 100%;
+        padding: 60vw 17vw;
+        margin-bottom: 68.2vw;
+        margin-top: -28vw;
+    }
+                
+
+    #home_main h1 {
+        font-size: 5vw;
+        /* Larger font size for mobile devices */
+    }
+
+    #home_main .headings .child {
+        font-size: 11vw;
+        letter-spacing: 0.2px;
+        text-align: start;
+        /* Larger font size for smaller screens */
+    }
+
+    #home_last p {
+        font-size: 18px;
+        /* Set a fixed font size for readability */
+        padding: 53px 5vw;
+    }
+}
+
+/* ========== Responsive Design for Small Screens ========== */
+@media (max-width: 750px) {
+    #projects {
+        padding: 10vw 5vw;
+    }
+
+    #project_images {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #fleft {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Each project will be in a separate box */
+    .fleftlm {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover effect for better UI */
+    .fleftlm:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Center-align text inside boxes */
+    .fleftlm h1,
+    .fleftlm h3,
+    .fleftlm h4 {
+        text-align: center;
+    }
+
+    .fleftlm h1 {
+        font-size: 5vw;
+    }
+
+    .fleftlm h3 {
+        font-size: 3.5vw;
+    }
+
+    .fleftlm h4 {
+        font-size: 2.5vw;
+        opacity: 0.7;
+    }
+
+    /* Hide images for small screens */
+    #fright {
+        display: none;
+    }
+
+    /* Button Adjustments for Small Screens */
+    #btndiv {
+        flex-direction: column;
+        margin-top: 5vw;
+    }
+
+    #btndiv button {
+        font-size: 4vw;
+        padding: 2vw 4vw;
+    }
+
+    /* Adjust dropdown for better touch usability */
+    #btndiv .sub-menu-wrap1 {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #btndiv .sub-menu1 {
+        width: 100%;
+    }
+
+    #btndiv .sub-menu-link1 {
+        font-size: 3.5vw;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #projects{
+        padding: 50vw 5vw;
+    }
+
+    #projects .fheading h1 {
+        line-height: 1;
+        font-size: 6.5vw;
+        font-weight: 400;
+    }
+    /* Make each project box separate */
+    .fleftlm {
+        background: #ffffff;
+        /* Clean white background */
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        /* More prominent shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 15px 0;
+        /* Space between boxes */
+        opacity: 0;
+        /* Initially hidden */
+        transform: translateY(30px);
+    }
+
+    /* Hover effect for better UI */
+    .fleftlm:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Fade-in animation when scrolling */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* JavaScript will apply this class to elements when they appear */
+    .fade-in {
+        animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    /* Ensure spacing and alignment */
+    .fleftlm h1,
+    .fleftlm h3,
+    .fleftlm h4 {
+        text-align: center;
+    }
+
+    .fleftlm h1 {
+        font-size: 24px;
+        padding-top: 4px;
+    }
+
+    .fleftlm h3 {
+        font-size: 17px;
+        margin-top: 9px;
+    }
+
+    .fleftlm h4 {
+        font-size: 13px;
+        opacity: 0.7;
+    }
+
+    /* Ensure boxes are stacked properly */
+    #fleft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center boxes */
+    }
+
+    .fleftlm {
+        width: 90%;
+    }
+
+    #btndiv .sub-menu-wrap1 {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 150%;
+        background-color: white;
+        /* Solid white background */
+        opacity: 1;
+        /* Ensures no transparency */
+        /* Adds a shadow for better visibility */
+        border-radius: 10px;
+        /* Soft edges */
+        padding: 10px;
+        z-index: 999;
+        /* Ensures it stays on top */
+    }
+}
+
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .lines {
+        padding: 5vw 5vw;
+    }
+
+    .lines h1 {
+        font-size: 4vw;
+    }
+
+    .lines p {
+        font-size: 1.5vw;
+    }
+
+    #skill_img {
+        gap: 3vw;
+    }
+
+    .slide {
+        width: 15%;
+        min-width: 100px;
+    }
+
+    .slide .tag {
+        font-size: 1.5vw;
+        padding: 6px 12px;
+    }
+
+    .slide .img {
+        max-width: 80px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lines h1 {
+        font-size: 5vw;
+    }
+
+    .lines p {
+        font-size: 2.5vw;
+    }
+
+    #skill_img {
+        gap: 4vw;
+    }
+
+    .slide {
+        width: 25%;
+        min-width: 80px;
+    }
+
+    .slide .tag {
+        font-size: 2vw;
+        padding: 5px 10px;
+    }
+
+    .slide .img {
+        max-width: 70px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lines h1 {
+        font-size: 6vw;
+    }
+
+    .lines p {
+        font-size: 3vw;
+    }
+
+    #skill_img {
+        gap: 5vw;
+    }
+
+    .slide {
+        width: 20%;
+        min-width: 82px;
+    }
+
+    .slide .tag {
+        font-size: 3.5vw;
+        padding: 5px 8px;
+    }
+
+    .slide .img {
+        max-width: 64px;
+        height: 54px;
+    }
+}
+
+/* For Medium Screens (Tablets & Laptops) */
+@media (max-width: 1024px) {
+    #certi_img {
+        padding: 0 10vw;
+    }
+
+    .slide1 {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    #certi_img {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+        padding: 0 5vw;
+    }
+
+    .slide1 {
+        width: 80%;
+    }
+
+    .slide1 .img {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    #certi_img {
+        padding: 0 3vw;
+    }
+
+    .slide1 {
+        width: 80%;
+    }
+
+    .slide1 .img {
+        max-height: 400px;
+    }
+
+    .slide1 .tag {
+        font-size: 3vw;
+        padding: 0px 1px 1px 1px;
+    }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+    #footer {
+        padding: 6vw 5vw;
+    }
+
+    #footer .foot_heading h1 {
+        font-size: 4vw;
+    }
+
+    #footer .icons {
+        gap: 5vw;
+    }
+
+    #footer .icons a {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer .foot_heading h1 {
+        font-size: 5vw;
+    }
+
+    #footer .icons {
+        padding-top: 6vw;
+        padding-bottom: 5vw;
+    }
+
+    #footer .icons a {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer .foot_heading h1 {
+        font-size: 6vw;
+        line-height: 1.4;
+    }
+
+    #footer .icons {
+        flex-wrap: wrap;
+        gap: 6vw;
+        padding-top: 3vw;
+        padding-bottom: 6vw;
+    }
+
+    #footer .icons a {
+        font-size: 5vw;
+    }
+    #footer .icons i {
+        font-size: 3.6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: calc(50% - 20px);
+        /* Two cards per row */
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        /* One card per row on smaller screens */
+    }
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Ensures no extra lines */
+}
+
+/* Top Section */
+#loader #top {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Top Section Text */
+#top h5 {
+    text-transform: uppercase;
+    font-size: clamp(9px, 1.1vw, 13px);
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Main Heading */
+#loader h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(22px, 5vw, 50px);
+    /* Adaptive font size */
+    font-weight: 500;
+    line-height: 1;
+    /* Prevents extra spacing */
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    /* Prevents text from breaking into a new line */
+    overflow: hidden;
+}
+
+/* Last Name Styling */
+#loader .parent .child .lastname {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+/* Reveal Animation Parent */
+.reveal .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    /* Ensures no extra content shows */
+    margin: 0;
+    padding: 0;
+}
+
+/* Reveal Child */
+.reveal .parent .child {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure Proper Spacing in Each Word */
+.parent .child span {
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+
+#black {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    z-index: 9999;
+    background-color: #000;
+}
+
+#home {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+    /* Removed box-shadow */
+}
+
+/* Logo */
+#nav img {
+    width: clamp(100px, 12vw, 150px);
+}
+
+/* Right Section */
+#nav #right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Menu Icon */
+#nav #right i {
+    font-size: clamp(22px, 2vw, 26px);
+    cursor: pointer;
+}
+
+/* Submenu Styling */
+#nav #right .sub-menu-wrap {
+    position: absolute;
+    top: 80%;
+    right: 3%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* When Opened */
+#nav #right .sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+/* Submenu Container */
+#nav #right .sub-menu {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Submenu Links */
+#nav #right .sub-menu-link {
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    transition: font-weight 0.3s ease-in-out;
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+/* Hover Effect */
+#nav #right .sub-menu-link:hover {
+    font-weight: 500;
+}
+
+
+
+/* #nav a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;  
+    letter-spacing: -0.5px;  
+} */
+
+
+#home #home_main {
+    width: 100%;
+    padding: 15vw 18vw;
+    margin-bottom: 12.2vw;
+    /* Space between #home_main and #home_last */
+}
+
+#home_main .reveal .parent {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+
+
+#home_main h1 {
+    font-weight: 400;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    /* Adjusts the position of the text to be a little bit down */
+}
+
+.headings {
+    display: flex;
+    gap: 40px;
+}
+
+
+#home_main .headings .child {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 7vw;
+    font-weight: 800;
+    letter-spacing: -3px;
+    padding-right: 5px;
+    transition: color 0.2s ease;
+}
+
+#home_main .headings .child:hover {
+    color: #000;
+}
+
+#home_last {
+    padding: 5vw 18vw;
+    margin-top: -10vw;
+    /* Ensures #home_last is visible from the landing page */
+}
+
+#home_last p {
+    width: 90%;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+#home_last .warn {
+    font-weight: 600;
+}
+
+#projects {
+    padding: 10vw 18vw;
+}
+
+.fheading>h1 {
+    line-height: 1;
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+
+.fheading>h1:nth-child(2) {
+    color: transparent;
+    -webkit-text-stroke: 0.5px #000;
+}
+
+.fheading .second {
+    color: #000;
+}
+
+.fheading .first {
+    color: transparent;
+    -webkit-text-stroke: 0.5px #000;
+    transition: color 0.3s ease;
+}
+
+.fheading .first:hover {
+    color: #000;
+}
+
+#project_images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+}
+
+#fleft {
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+}
+
+.fleftlm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.fleftlm h1 {
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 0.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.fleftlm a {
+    text-decoration: none;
+    color: #2d396d;
+}
+
+.fleftlm a:hover {
+    color: #606ea8;
+}
+
+.fleftlm h3 {
+    font-size: 1.3vw;
+    font-weight: 400
+}
+
+.fleftlm h4 {
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+#fright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+}
+
+#fright .images {
+    width: 90%;
+    height: 90%;
+}
+
+#fright .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#btndiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+#btndiv button {
+    padding: 1vw 2vw;
+    border-radius: 100px;
+
+    background-color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+#btndiv .sub-menu-wrap1 {
+    position: absolute;
+    top: 110%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-heigth, ease-in-out 0.5s;
+}
+
+#btndiv .sub-menu-wrap1.open-menu1 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    max-height: 400px;
+}
+
+/* #btndiv .sub-menu1 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+} */
+
+#btndiv .sub-menu-link1 {
+    border-radius: 5px;
+    padding: 7px 12px;
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    margin: 5px;
+    transition: font-weight, ease-in-out 0.3s;
+}
+
+#btndiv .sub-menu-link1:hover {
+    font-weight: 500;
+}
+
+
+#skills {
+    width: 100%;
+}
+
+.lines {
+    padding: 5vw 18vw;
+}
+
+.lines h1 {
+    width: 50%;
+    font-size: 3.5vw;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.lines p {
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+}
+
+#skill_img {
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    width: 10%;
+}
+
+.slide .tag {
+    width: fit-content;
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.slide .img {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.slide .img img {
+    display: block;
+    margin: auto;
+    width: 75%;
+    object-fit: cover;
+}
+
+#certification {
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+    width: 100%;
+}
+
+#certi_img {
+    padding: 0 15vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+    gap: 2vw;
+}
+
+.slide1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slide1 .img {
+    display: flex;
+    width: 100%;
+    max-height: 500px;
+    /* Ensures proper scaling */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    margin-bottom: 2vh;
+}
+
+.slide1 .img img {
+    width: 100%;
+    height: auto;
+    object-fit:fill;
+    /* Ensures the full image is visible */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#footer {
+    text-align: center;
+    background-color: #000;
+    width: 100%;
+    padding: 0 16vw;
+    padding-top: 5vw;
+}
+
+#footer .foot_heading h1 {
+    text-align: center;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    /* padding-left: 5px; */
+    transition: color 0.2s ease;
+}
+
+#footer .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7vw;
+    padding-bottom: 5vw;
+    gap: 100px;
+}
+
+#footer .icons a {
+    text-decoration: none;
+}
+
+#footer .icons i {
+    font-size: 2vw;
+    color: #fff;
+}
+
+#footer .bottom h5 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    #loader h1 {
+        font-size: clamp(20px, 4.5vw, 45px);
+    }
+
+    #loader #top h5 {
+        font-size: clamp(9px, 1.1vw, 13px);
+    }
+}
+
+@media (max-width: 768px) {
+    #loader h1 {
+        font-size: clamp(18px, 4vw, 40px);
+    }
+
+    #loader #top h5 {
+        font-size: clamp(8px, 1vw, 12px);
+    }
+}
+
+@media (max-width: 480px) {
+    #loader h1 {
+        font-size: clamp(25px, 6vw, 50px);
+    }
+
+    #loader #top h5 {
+        font-size: clamp(10px, 1.3vw, 14px);
+    }
+}
+
+@media (max-width: 433px) {
+    #loader h1 {
+        font-size: clamp(24px, 6vw, 50px);
+        /* Ensure readable size */
+        line-height: 1;
+        white-space: nowrap;
+        /* Prevents unwanted line breaks */
+    }
+
+    #top h5 {
+        font-size: clamp(10px, 1.3vw, 14px);
+    }
+}
+
 
 
 @media screen and (max-width: 768px) {
