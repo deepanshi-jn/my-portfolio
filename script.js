@@ -1,6 +1,31 @@
-Shery.mouseFollower();
+if (window.innerWidth >= 450) {
+    Shery.mouseFollower();
+}
 Shery.makeMagnet(".magnet");
-Shery.hoverWithMediaCircle(".heffect",{images:["./Images/Pic-modified.JPG"]});
+let hoverEffectApplied = false;
+
+function handleHoverEffect() {
+    if (window.innerWidth >= 450) {
+        if (!hoverEffectApplied) {
+            Shery.hoverWithMediaCircle(".heffect", {
+                images: ["./Images/Pic-modified.JPG"]
+            });
+            hoverEffectApplied = true;
+        }
+    } else {
+        document.querySelectorAll(".heffect").forEach(el => {
+            el.style.transform = "none"; // Reset transformations
+        });
+        hoverEffectApplied = false;
+    }
+}
+
+// Run on page load
+handleHoverEffect();
+
+// Run on window resize
+window.addEventListener("resize", handleHoverEffect);
+
 
 function valueset(){
     gsap.set("#nav .ani",{y:"-100%",opacity:0});
@@ -153,3 +178,17 @@ document.addEventListener("DOMContentLoaded", function () {
     applyFadeEffect();
     window.addEventListener("resize", applyFadeEffect);
 });
+
+function handleCursorEffect() {
+    if (window.innerWidth < 450) {
+        document.body.style.cursor = "default"; // Reset to default cursor
+    } else {
+        Shery.mouseFollower();
+    }
+}
+
+// Run on page load
+handleCursorEffect();
+
+// Run on window resize
+window.addEventListener("resize", handleCursorEffect);
